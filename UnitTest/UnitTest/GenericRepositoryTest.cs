@@ -1,9 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using EjercicioFinal.InfraestructuraTransversal.Excepciones;
-using EjercicioFinal.Models;
-using EjercicioFinal.Services.Repositorios;
-using EjercicioFinal.Services.Repositorios.JugadorRepository;
+﻿using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTest.UnitTest

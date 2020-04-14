@@ -1,12 +1,6 @@
 ﻿using EjercicioFinal.DAL;
-using EjercicioFinal.Models;
-using EjercicioFinal.Services.Specifications;
-using EjercicioFinal.Services.Specifications.SpecificationSimples;
-using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace EjercicioFinal.Services.Repositorios

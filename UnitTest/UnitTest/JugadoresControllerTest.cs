@@ -1,9 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Threading.Tasks;
-using EjercicioFinal.Controllers;
-using EjercicioFinal.Services.Repositorios.JugadorRepository;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using EjercicioFinal.Models;
 
 namespace UnitTest.UnitTest
 {
