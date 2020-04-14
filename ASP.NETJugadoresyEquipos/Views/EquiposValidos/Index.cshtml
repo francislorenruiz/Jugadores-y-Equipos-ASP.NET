@@ -1,0 +1,40 @@
+﻿@model IEnumerable<EjercicioFinal.Models.ViewModel.EquiposValidos>
+
+@{
+    ViewBag.Title = "Equipos válidos";
+}
+
+<h2>Equipos válidos</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroJugadores)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValoracionMedia)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroJugadores)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValoracionMedia)
+        </td>
+        <td>
+            @Html.ActionLink("Ver jugadores", "JugadoresPorPais", new { Pais = item.Pais })
+        </td>
+    </tr>
+}
+
+</table>

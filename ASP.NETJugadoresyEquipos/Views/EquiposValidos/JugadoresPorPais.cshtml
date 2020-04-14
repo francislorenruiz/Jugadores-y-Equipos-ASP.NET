@@ -1,0 +1,46 @@
+﻿@model IEnumerable<EjercicioFinal.Models.Jugador>
+
+@{
+    ViewBag.Title = "Jugadores por equipo";
+}
+
+<h2>Jugadores de @ViewBag.NombreEquipo</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pais)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Valoracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dorsal)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pais)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Valoracion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dorsal)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
